@@ -8,7 +8,7 @@ import maldivesImg from "../public/maldives.jpg";
 
 const greetings = [
   "Hello!",
-  "Xin chào!",
+  "Xin chào!", 
   "Grüezi!",
   "Ciao!",
   "Bonjour!",
