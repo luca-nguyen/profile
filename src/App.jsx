@@ -200,14 +200,16 @@ function Australia() {
   return (
     <div id="australia" className="section">
       <span>🇦🇺</span>
-      <p>
-        Currently in my 2nd year of Software Engineering here at Sydney, UNSW.
-      </p>
-      <p>
-        I love learning and experimenting with code, like with this very profile
-        website where I used React for the first time :]
-      </p>
-      <TechStack />
+      <div className="content">
+        <p>
+          Currently in my 2nd year of Software Engineering here at Sydney, UNSW.
+        </p>
+        <p>
+          I love learning and experimenting with code, like with this very
+          profile website where I used React for the first time :]
+        </p>
+        <TechStack />
+      </div>
     </div>
   );
 }
@@ -263,11 +265,13 @@ function Vietnam() {
   return (
     <div id="vietnam" className="section">
       <span>🇻🇳</span>
-      <p>
-        My background is Vietnamese. Plain basic Phở is probably my all-time
-        favourite comfort food.
-      </p>
-      <img className="pho" src={beefphoImg} />
+      <div className="content">
+        <p>
+          My background is Vietnamese. Plain basic Phở is probably my all-time
+          favourite comfort food.
+        </p>
+        <img className="pho" src={beefphoImg} />
+      </div>
     </div>
   );
 }
@@ -276,11 +280,13 @@ function Switzerland() {
   return (
     <div id="switzerland" className="section">
       <span>🇨🇭</span>
-      <p>
-        Fun fact, I was born in the Switzerland city, Geneva (I know it's kinda
-        ridiculous).
-      </p>
-      <img className="lucca" src={luccaImg} />
+      <div className="content">
+        <p>
+          Fun fact, I was born in the Switzerland city, Geneva (I know it's
+          kinda ridiculous).
+        </p>
+        <img className="lucca" src={luccaImg} />
+      </div>
     </div>
   );
 }
@@ -289,13 +295,16 @@ function Italy() {
   return (
     <div id="italy" className="section">
       <span>🇮🇹</span>
-      <p>
-        One of my favourite places in the world is Positano in Italy (I was
-        actually named after a street called 'Lucca' in the Italy), the artwork
-        in the museums there were insane. I've recently gotten back into digital
-        painting—here is an in-progress of a scene from the show Arcane!
-      </p>
-      <img className="arcane" src={arcaneImg} />
+      <div className="content">
+        <p>
+          One of my favourite places in the world is Positano in Italy (I was
+          actually named after a street called 'Lucca' in the Italy), the
+          artwork in the museums there were insane. I've recently gotten back
+          into digital painting—here is an in-progress of a scene from the show
+          Arcane!
+        </p>
+        <img className="arcane" src={arcaneImg} />
+      </div>
     </div>
   );
 }
@@ -304,13 +313,15 @@ function Games() {
   return (
     <div id="games" className="section">
       <span>🏁</span>
-      <p>I play a lot of games in my free time.</p>
-      <p>
-        I enjoy FPS games like Valorant (of course lol) but have recently gotten
-        into Metroidvania and Soulslike games such as Hollow Knight and God of
-        War.
-      </p>
-      <img className="games" src={hollowImg} />
+      <div className="content">
+        <p>I play a lot of games in my free time.</p>
+        <p>
+          I enjoy FPS games like Valorant (of course lol) but have recently
+          gotten into Metroidvania and Soulslike games such as Hollow Knight and
+          God of War.
+        </p>
+        <img className="games" src={hollowImg} />
+      </div>
     </div>
   );
 }
@@ -319,12 +330,14 @@ function Maldives() {
   return (
     <div id="maldives" className="section">
       <span>🇲🇻</span>
-      <p>In my opinion, the best holiday location is the Maldives.</p>
-      <p>
-        Spending time there with my family after completing the HSC was an
-        experience I'll never forget. Here's a photo I took...
-      </p>
-      <img className="maldives" src={maldivesImg} />
+      <div className="content">
+        <p>In my opinion, the best holiday location is the Maldives.</p>
+        <p>
+          Spending time there with my family after completing the HSC was an
+          experience I'll never forget. Here's a photo I took...
+        </p>
+        <img className="maldives" src={maldivesImg} />
+      </div>
     </div>
   );
 }
