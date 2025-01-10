@@ -20,7 +20,7 @@ export default function Extras() {
           <a href="https://youtu.be/reMjScwSlqs" target="_blank">
             Here's a clip
           </a>{" "}
-          of my proudest movement I've ever attempted back in the day - a
+          of the proudest movement I've ever attempted back in the day - a
           touchdown raiz boxcutter.
         </span>
       </div>

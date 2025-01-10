@@ -3,6 +3,10 @@
   flex-direction: column;
 }
 
+span, p {
+  font-size: 20px;
+}
+
 .introduction {
   display: flex;
   flex-direction: column;
@@ -75,7 +79,7 @@ header {
   left: 4rem;
   transform: translateY(-200%);
   gap: 20px;
-  font-size: 2rem;
+  font-size: 2rem !important;
   padding: 1rem;
   border: 2px solid var(--accent-color);
   border-radius: 15px;
@@ -83,7 +87,9 @@ header {
 
   opacity: 0;
 }
-
+header span {
+  font-size: 2rem !important;
+}
 header:hover {
   border-color: var(--tertiary-color);
   transition: ease 0.3s;

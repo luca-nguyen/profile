@@ -374,7 +374,7 @@ function Italy() {
       <div className="content">
         <p>
           One of my favourite places in the world is Positano in Italy (I was
-          actually named after a street called{" "}
+          actually named after a city called{" "}
           <a
             href="https://www.google.com/search?client=firefox-b-d&q=lucca+italy"
             target="_blank"
