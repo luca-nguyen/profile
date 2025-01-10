@@ -166,6 +166,7 @@ a {
 }
 
 /* About Page */
+
 .about {
   display: flex;
   flex-direction: column;
@@ -220,8 +221,13 @@ h2 {
   border-radius: 50%;
   border: none;
   background-color: var(--theme-button-outer);
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease; 
 }
+.themeButton:hover {
+  cursor: pointer;
+  transform: scale(1.2); 
+}
+
 .sun, .moon {
   padding: 7px 7px;
   fill: var(--theme-button-inner);

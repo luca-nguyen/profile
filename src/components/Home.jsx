@@ -25,8 +25,16 @@ export default function Home() {
   const [fade, setFade] = useState(true);
   const [isHeaderVisible, setIsHeaderVisible] = useState(false);
   const [currFlag, setCurrFlag] = useState(null);
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(() => {
+    const savedTheme = localStorage.getItem("theme");
+    return savedTheme ? JSON.parse(savedTheme) : true;
+  });
 
+  // Save theme to localStorage: called when "darkMode" state changes
+  useEffect(() => {
+    localStorage.setItem("theme", JSON.stringify(darkMode));
+  }, [darkMode]);
+  // Update theme to light/dark
   useEffect(() => {
     if (darkMode) {
       document.body.classList.add("darkmode");
@@ -164,7 +172,7 @@ function Mode({ darkMode, onDarkMode }) {
 function Globe() {
   return (
     <span className="globe">
-      <Link to="/about">
+      <Link to="/extras">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 36 36"
@@ -335,8 +343,8 @@ function Vietnam() {
       <span>🇻🇳</span>
       <div className="content">
         <p>
-          My background is Vietnamese. Plain basic <a href="/about">Phở</a> is
-          probably my all-time favourite comfort food.
+          My background is Vietnamese. Plain basic Phở is probably my all-time
+          favourite comfort food.
         </p>
         <img className="pho" src={beefphoImg} />
       </div>
